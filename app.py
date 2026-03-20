@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
-from models import Question, Result
+from modules import Question, Result
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='asssignment 4/templates')
 
 # Stack (LIFO)
 questions_stack = [
